@@ -35,3 +35,6 @@ mat-sidenav-container {
     right: 0;
     position: absolute;
 }
+mat-sidenav{
+    width:250px;
+}
