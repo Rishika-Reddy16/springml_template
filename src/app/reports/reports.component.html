@@ -1,1 +1,26 @@
-<p>reports works!</p>
+<mat-sidenav-container>
+    <mat-sidenav #drawer mode="side" class="border-0" opened style="background-color: #fafafa;">
+        <mat-selection-list [multiple]="false">
+            <mat-list-option routerLink="/reports" routerLinkActive="active" class="nav">
+                <label>Reports snapshot</label>
+            </mat-list-option>
+            <mat-list-option routerLinkActive="active" class="nav">
+                <label>Reports</label>
+            </mat-list-option>
+            <mat-list-option routerLinkActive="active" class="nav">
+                <div class="d-flex">
+                    <span class="material-icons-outlined">folder</span>
+                    <label class="align-self-center ms-2">Library</label>
+                </div>
+            </mat-list-option>
+        </mat-selection-list>
+        <div>
+            <mat-divider class="my-3 w-100"></mat-divider>
+            <span class="material-icons float-end" (click)="drawer.toggle()" style="font-size: 1.8em;cursor: pointer;">chevron_left</span>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <span *ngIf="!drawer.opened" class="material-icons" (click)="drawer.toggle()" style="font-size: 1.8em;cursor: pointer;">navigate_next</span>
+        abc
+    </mat-sidenav-content>
+</mat-sidenav-container>

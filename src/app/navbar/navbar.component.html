@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-    <mat-sidenav mode="side" class="border-0" [ngStyle]="{'background-color': isExpanded==true ? '#fff' : '#fafafa' }" opened (mouseover)="isExpanded = !isExpanded" (mouseout)="isExpanded = !isExpanded">
+    <mat-sidenav mode="side" class="border-0" [ngStyle]="{'background-color': isExpanded==true ? '#fff' : '#fafafa' }" opened (mouseover)="isExpanded = true" (mouseleave)="isExpanded = false">
         <mat-selection-list [multiple]="false">
             <mat-list-option routerLink="/home" routerLinkActive="active" class="nav">
                 <div class="d-flex">

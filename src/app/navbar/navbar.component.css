@@ -2,6 +2,7 @@ label{
     color: #121212;
     font-weight: 500;
     font-size: 14px;
+    cursor: pointer;
 }
 .nav div span,.nav div label{
     color: #5f6368;
