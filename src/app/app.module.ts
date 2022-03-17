@@ -14,13 +14,16 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu';
+import { ReportsNavComponent } from './reports-nav/reports-nav.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavbarComponent,
     HomeComponent,
-    ReportsComponent
+    ReportsComponent,
+    ReportsNavComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatListModule,
     MatIconModule,
     MatExpansionModule,
-    MatDividerModule
+    MatDividerModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

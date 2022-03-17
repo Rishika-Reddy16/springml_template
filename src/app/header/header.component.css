@@ -1,6 +1,35 @@
-/* :host /deep/ router-outlet + * {
-    padding-top: 4em;
-  } */
-  .example-spacer {
-    flex: 1 1 auto;
-  }
+:host /deep/ router-outlet + * {
+    display: block;
+    padding-top: 2.4em;
+    height: 100%;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.material-icons{
+  color: #5f6368;
+  font-size: 32px;
+}
+.form-group .form-control {
+  padding-left: 3rem;
+  height: 3em;
+  box-shadow: none;
+  font-size: 0.75em;
+  background-color: #e8eaed;
+  border: 2px solid #FFFFFFCC;
+  border-radius: 6px;
+}
+.form-group .form-control-icon {
+  position: absolute;
+  z-index: 2;
+  line-height: 2.7rem;
+  text-align: center;
+  pointer-events: none;
+  padding-top: 0.05em;
+  padding-left: 0.65em;
+  font-size: 25px;
+}
+::placeholder {
+  color: #5f6368;
+  font-weight: 500;
+}

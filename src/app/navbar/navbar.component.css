@@ -21,6 +21,7 @@ mat-sidenav-container {
     min-height: 100%;
 }
 mat-sidenav{
+    padding-top: 1.6em;
     border-inline-end: 1px #d3d3d3 solid !important;
 }
 .mat-list-option{

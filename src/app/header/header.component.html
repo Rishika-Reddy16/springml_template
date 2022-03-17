@@ -1,5 +1,11 @@
-<mat-toolbar style="background-color: white;border-bottom: 1px #d3d3d3 solid;">
-    <span>Heading</span>
+<mat-toolbar style="background-color: white;border-bottom: 1px #d3d3d3 solid;z-index: 9999;" class="fixed-top">
+    <img src="../../assets/logo.png">
+    <div class="form-group w-50 ms-4">
+        <span class="material-icons form-control-icon">search</span>
+        <input type="text" class="form-control" placeholder="Search">
+    </div>
     <span class="example-spacer"></span>
+    <span class="material-icons me-4">apps</span>
+    <span class="material-icons">account_circle</span>
 </mat-toolbar>
 <router-outlet></router-outlet>

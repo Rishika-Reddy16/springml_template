@@ -10,6 +10,9 @@ label{
     color:#1a73e8;
     border-radius: 0 50px 50px 0;
 }
+.nav[aria-selected]{
+    border-radius: 0 50px 50px 0;
+}
 .nav:hover{
     border-radius: 0 50px 50px 0;
 }
@@ -19,4 +22,16 @@ mat-sidenav-container {
 }
 .mat-list-option{
     height: 36px !important;
+}
+.bottom{
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.down{
+    bottom: 13%;
+    left: 0;
+    right: 0;
+    position: absolute;
 }
