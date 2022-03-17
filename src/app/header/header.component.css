@@ -1,0 +1,6 @@
+/* :host /deep/ router-outlet + * {
+    padding-top: 4em;
+  } */
+  .example-spacer {
+    flex: 1 1 auto;
+  }

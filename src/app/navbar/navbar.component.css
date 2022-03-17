@@ -1,0 +1,27 @@
+label{
+    color: #121212;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav div span,.nav div label{
+    color: #5f6368;
+}
+.nav.active,.nav.active div span,.nav.active div label{
+    background-color: #1a73e8;
+    cursor: pointer;
+    color:#fff;
+    border-radius: 0 50px 50px 0;
+}
+.nav:hover{
+    border-radius: 0 50px 50px 0;
+}
+mat-sidenav-container {
+    height: 100%;
+    min-height: 100%;
+}
+mat-sidenav{
+    border-inline-end: 1px #d3d3d3 solid !important;
+}
+.mat-list-option{
+    height: 48px !important;
+}
