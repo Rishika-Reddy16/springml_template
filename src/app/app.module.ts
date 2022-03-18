@@ -15,7 +15,19 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 import { ReportsNavComponent } from './reports-nav/reports-nav.component';
+import { ReportsNav1Component } from './reports-nav1/reports-nav1.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { LibComponent } from './lib/lib.component';
+import { AdsComponent } from './ads/ads.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +35,10 @@ import { ReportsNavComponent } from './reports-nav/reports-nav.component';
     NavbarComponent,
     HomeComponent,
     ReportsComponent,
-    ReportsNavComponent
+    ReportsNavComponent,
+    ReportsNav1Component,
+    LibComponent,
+    AdsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +50,16 @@ import { ReportsNavComponent } from './reports-nav/reports-nav.component';
     MatIconModule,
     MatExpansionModule,
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    FlexLayoutModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

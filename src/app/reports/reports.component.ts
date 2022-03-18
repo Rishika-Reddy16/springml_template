@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportsComponent implements OnInit {
   show=false;
+  panelOpenState = false;
   constructor() { }
 
   ngOnInit(): void {

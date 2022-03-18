@@ -2,3 +2,19 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 html, body { height: 100%; }
 html, body, div, span, h5, h4, p, th, td, span, h3,h2, a, button { margin: 0; font-family: 'Open Sans', sans-serif; }
+.mat-expansion-panel-content > .mat-expansion-panel-body {
+    padding: 0 !important;
+}
+/* .mat-list-option[aria-selected="true"] {
+  background-color: #1a73e8;
+  cursor: pointer;
+  color:#fff;
+  border-radius: 0 50px 50px 0;
+} */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin-top: 2%;
+}

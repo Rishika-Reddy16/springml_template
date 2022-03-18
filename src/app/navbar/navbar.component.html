@@ -13,6 +13,18 @@
                     <label mat-line *ngIf="isExpanded" class="align-self-center ms-2">Reports</label>
                 </div>
             </mat-list-option>
+            <mat-list-option routerLink="/ads/reports-nav1" routerLinkActive="active" class="nav">
+                <div class="d-flex">
+                    <span class="material-icons">ads_click</span>
+                    <label mat-line *ngIf="isExpanded" class="align-self-center ms-2">Advertising</label>
+                </div>
+            </mat-list-option>
+            <mat-list-option routerLink="/lib" routerLinkActive="active" class="nav bottom">
+                <div class="d-flex">
+                    <span class="material-icons">settings</span>
+                    <label mat-line *ngIf="isExpanded" class="align-self-center ms-2">Admin</label>
+                </div>
+            </mat-list-option>
         </mat-selection-list>
     </mat-sidenav>
 

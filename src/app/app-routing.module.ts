@@ -5,6 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReportsNavComponent } from './reports-nav/reports-nav.component';
 import { ReportsComponent } from './reports/reports.component';
+import { ReportsNav1Component } from './reports-nav1/reports-nav1.component';
+import { LibComponent } from './lib/lib.component';
+import { AdsComponent } from './ads/ads.component';
 
 const routes: Routes = [
   {
@@ -25,12 +28,42 @@ const routes: Routes = [
             component:HomeComponent,
           },
           {
+            path:'lib',
+            component:LibComponent,
+          },
+          {
             path:'reports',
             component:ReportsComponent,
             children:[
               {
                 path:'reports-nav',
                 component:ReportsNavComponent,
+              },
+              {
+                path:'reports-nav1',
+                component:ReportsNav1Component,
+              },
+              {
+                path:'lib',
+                component:LibComponent,
+              }
+            ]
+          },
+          {
+            path:'ads',
+            component:AdsComponent,
+            children:[
+              {
+                path:'reports-nav',
+                component:ReportsNavComponent,
+              },
+              {
+                path:'reports-nav1',
+                component:ReportsNav1Component,
+              },
+              {
+                path:'lib',
+                component:LibComponent,
               }
             ]
           }
