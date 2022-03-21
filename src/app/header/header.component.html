@@ -2,14 +2,14 @@
     <!-- <div  style="background-color: white;" class="py-3 px-2">
         <img src="../../assets/logo.png">
     </div> -->
-    <img src="../../assets/header logo.png">
+    <img [routerLink]="['/home']" style="cursor: pointer;" src="../../assets/header logo.png">
     <div class="form-group w-50 ms-5">
         <span class="material-icons form-control-icon" style="color: #5f6368;">search</span>
         <input type="text" class="form-control" placeholder="Search">
     </div>
     <span class="example-spacer"></span>
-    <span class="material-icons me-4">apps</span>
-    <span class="material-icons">account_circle</span>
-    <div class="bd-b"></div>
+    <span class="material-icons me-4" style="cursor: pointer;">apps</span>
+    <span class="material-icons" style="cursor: pointer;">account_circle</span>
+    <!-- <div class="bd-b"></div> -->
 </mat-toolbar>
 <router-outlet></router-outlet>
