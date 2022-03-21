@@ -1,3 +1,8 @@
+:host /deep/ router-outlet + * {
+    display: block;
+    padding-top: 0;
+    height: 100%;
+}
 label{
     color: #121212;
     font-weight: 500 !important;
@@ -30,7 +35,7 @@ mat-sidenav-container {
     position: absolute;
 }
 .down{
-    bottom: 13%;
+    bottom: 11%;
     left: 0;
     right: 0;
     position: absolute;

@@ -1,10 +1,10 @@
 <mat-sidenav-container>
-    <mat-sidenav #drawer mode="side" class="border-0" opened style="background-color: #fafafa;">
-        <mat-selection-list [multiple]="false">
-            <mat-list-option routerLink="/ads/reports-nav1" routerLinkActive="active" class="nav">
+    <mat-sidenav #drawer mode="side" class="border-0" opened>
+        <mat-selection-list [multiple]="false" class="pt-0">
+            <mat-list-option routerLink="/ads" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="nav">
                 <label>Advertising snapshot</label>
             </mat-list-option>
-            <mat-divider class="my-3 w-90" style="margin-left:5%;margin-right:5%"></mat-divider>
+            <mat-divider class="my-2 mx-2"></mat-divider>
             <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
                 <mat-expansion-panel-header routerLinkActive="active" class="nav">
                    <mat-panel-title>
@@ -20,11 +20,11 @@
             </mat-expansion-panel>
         </mat-selection-list>
         <div class="bottom">
-            <mat-divider class="my-3 w-90" style="margin-left:5%;margin-right:5%"></mat-divider>
+            <mat-divider class="my-2 mx-2"></mat-divider>
             <span *ngIf="drawer.opened" class="material-icons float-end" (click)="drawer.toggle()" style="font-size: 1.8em;cursor: pointer;">chevron_left</span>
         </div>
     </mat-sidenav>
-    <mat-sidenav-content>
+    <mat-sidenav-content style="background-color: white;">
         <span *ngIf="!drawer.opened" class="material-icons bottom" (click)="drawer.toggle()" style="font-size: 1.8em;cursor: pointer;">navigate_next</span>
         <router-outlet></router-outlet>
     </mat-sidenav-content>

@@ -1,3 +1,8 @@
+:host /deep/ router-outlet + * {
+    display: block;
+    padding-top: 3.6em;
+    height: 100%;
+}
 label{
     color: #121212;
     font-weight: 500;
@@ -12,6 +17,9 @@ label{
     cursor: pointer;
     color:#fff;
     border-radius: 0 50px 50px 0;
+}
+.nav.active div label{
+    border-radius: 0
 }
 .nav:hover{
     border-radius: 0 50px 50px 0;

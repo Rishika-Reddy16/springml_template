@@ -1,7 +1,3 @@
-.example-spacer {
-    flex: 1 1 auto;
-}
-
 table {
     width: 100%;
     box-shadow: 0 20px 30px -16px rgba(9,9,16,0.2); 
@@ -9,14 +5,10 @@ table {
 }
   
 th{
-    background-color:#27AAE1;
+    background-color:#1a73e8;
     color:rgb(255, 255, 255)
 }
-  
-.right{
-    float:right;
-}
 
-mat-label,input,mat-option{
-    font-family: 'Source Sans Pro', sans-serif;
-}
+.mat-form-field {
+    font-size: 14px;
+  }

@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-    <mat-sidenav mode="side" class="border-0" [ngStyle]="{'background-color': isExpanded==true ? '#fff' : '#fafafa' }" opened (mouseover)="isExpanded = true" (mouseleave)="isExpanded = false">
+    <mat-sidenav mode="side" class="border-0" opened (mouseover)="isExpanded = true" (mouseleave)="isExpanded = false">
         <mat-selection-list [multiple]="false">
             <mat-list-option routerLink="/home" routerLinkActive="active" class="nav">
                 <div class="d-flex">
@@ -7,13 +7,13 @@
                     <label mat-line *ngIf="isExpanded" class="align-self-center ms-2">Home</label>
                 </div>
             </mat-list-option>
-            <mat-list-option routerLink="/reports/reports-nav" routerLinkActive="active" class="nav">
+            <mat-list-option routerLink="/reports" routerLinkActive="active" class="nav">
                 <div class="d-flex">
                     <span class="material-icons">poll</span>
                     <label mat-line *ngIf="isExpanded" class="align-self-center ms-2">Reports</label>
                 </div>
             </mat-list-option>
-            <mat-list-option routerLink="/ads/reports-nav1" routerLinkActive="active" class="nav">
+            <mat-list-option routerLink="/ads" routerLinkActive="active" class="nav">
                 <div class="d-flex">
                     <span class="material-icons">ads_click</span>
                     <label mat-line *ngIf="isExpanded" class="align-self-center ms-2">Advertising</label>
@@ -28,7 +28,7 @@
         </mat-selection-list>
     </mat-sidenav>
 
-    <mat-sidenav-content>
+    <mat-sidenav-content style="background-color: white;">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

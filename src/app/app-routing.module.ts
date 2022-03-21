@@ -36,7 +36,7 @@ const routes: Routes = [
             component:ReportsComponent,
             children:[
               {
-                path:'reports-nav',
+                path:'',
                 component:ReportsNavComponent,
               },
               {
@@ -54,12 +54,12 @@ const routes: Routes = [
             component:AdsComponent,
             children:[
               {
-                path:'reports-nav',
-                component:ReportsNavComponent,
+                path:'',
+                component:ReportsNav1Component,
               },
               {
-                path:'reports-nav1',
-                component:ReportsNav1Component,
+                path:'reports-nav',
+                component:ReportsNavComponent,
               },
               {
                 path:'lib',

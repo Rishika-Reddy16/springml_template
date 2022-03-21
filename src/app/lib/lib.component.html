@@ -1,6 +1,6 @@
-<div class="container">
-    <h3>Library</h3>
-    <mat-divider ></mat-divider>
+<div class="container-fluid">
+    <h4>Library</h4>
+    <mat-divider class="my-2"></mat-divider>
     <div class="row py-2">
       <div class="col-md-3">
         <mat-form-field  class="example-full-width w-100">
@@ -10,7 +10,7 @@
         </mat-form-field>
       </div>
       <div class="col-md-9">
-        <mat-form-field class="right">
+        <mat-form-field class="float-end">
           <mat-label>Status</mat-label>
           <mat-select  [(ngModel)]="searchKey1" >
             <mat-option (click)="applyFilter1()" *ngFor="let status of statuss" [value]="status.value">
