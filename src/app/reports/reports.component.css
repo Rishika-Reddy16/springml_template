@@ -51,7 +51,9 @@ mat-sidenav{
 .mat-expansion-panel {
     background: none
 }
-
+.mat-expansion-panel-header{
+    height:40px
+}
 .mat-expansion-panel.mat-expanded .mat-expansion-panel-header{
     background-color: #c2bfb84f;
     cursor: pointer;
